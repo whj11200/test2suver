@@ -1,0 +1,333 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    width: 1920px;
+    height: 1080px;
+    position: relative;
+    background-image: url("../img/MainBackground.png");
+}
+
+.submain {
+    width: 1920px;
+    height: 1080px;
+    background-image: url(../img/Rectangle\ 154.png);
+}
+.submain2 {
+    width: 1920px;
+    height: 1080px;
+    background-image: url(../img/Rectangle\ 154.png);
+}
+.submain3 {
+    width: 1920px;
+    height: 1080px;
+    background-color: #e8ffa2;
+    /*background-image: url(../img/Rectangle\ 154.png);*/
+}
+
+#scroll-to-top-button 
+{
+    position: fixed; 
+    bottom: 10px; 
+    right: 5px;
+    background: none;
+    border: none;
+    padding: 40px;
+}
+
+#image1 {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    transition: left 0.5s ease;
+}
+
+#image2 {
+    position: absolute;
+    top: 100px;
+    left: 1080px;
+}
+
+#texter 
+{
+    color: aliceblue;
+    top: 500px;
+}
+
+#move {
+    width: 1900px;
+    height: 500px;
+    margin-top: 200px;
+    margin-left: 10px;
+    transition: border-radius 0.3s ease;
+    overflow: hidden;
+    position: absolute;
+}
+
+#move.fullscreen {
+    border-radius: 0;
+}
+#logo
+{
+    position: absolute;
+    margin-left: 700px;
+    top: 200px;
+    
+}
+#ddd{
+    top: 750px;
+    position: absolute;
+    margin-left: 810px;
+    font-size: 30px;
+    color: white;
+    font-family: "PretendardVariable"
+}
+#aaa{
+    top: 700px;
+    position: absolute;
+    margin-left: 870px;
+    font-size: 20px;
+    color: white;
+    font-family: "PretendardVariable"
+}
+.dddd{
+    width: 1920px;
+    height: 1080px;
+    background-image: url("../img/2background.png");
+    position: relative;
+    overflow: hidden;
+
+}
+.motion-blur {
+    filter: blur(8px); /* 초기에는 모션 블러 효과를 적용하여 숨김 */
+    opacity: 0; /* 초기에는 투명도를 0으로 설정하여 숨김 */
+    transition: filter 0.5s ease, opacity 0.5s ease; /* 모션 블러와 투명도에 트랜지션 효과 적용 */
+}
+.show {
+    filter: blur(0); /* 모션 블러 효과 제거하여 보이게 함 */
+    opacity: 1; /* 투명도를 1로 설정하여 보이게 함 */
+}
+#project {
+    margin-top: 50px;
+    position: absolute;
+    color: #5F6C37;
+    font-size: 21px;
+    left: 405px;
+    margin-top: 200px;
+    font-family:  "PretendardVariable";
+}
+
+
+#videoElement {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(50%);
+    position: absolute;
+}
+#prom {
+    position: relative;
+    color: #70573B;
+    font-size: 38px;
+    writing-mode: vertical-lr;
+    margin-left: 390px;
+    top: 300px;
+    font-family: "마루 부리OTF";
+}
+#line{
+    position: absolute;
+    top: 200px;
+    left: 960px;
+}
+
+#prom2 {
+    position: absolute;
+    color: #70573B;
+    font-size: 38px;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    margin-left: 450px;
+    top: 300px;
+    font-family: "마루 부리OTF";
+}
+#prom3 {
+    position: absolute;
+    color: #70573B;
+    font-size: 38px;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    margin-left: 510px;
+    top: 300px;
+    font-family: "마루 부리OTF";
+}
+
+
+#icon76{
+    position: absolute;
+    top: 250px;
+    margin-left: 1250px;
+}
+#texter4{
+    font-size: 40px;
+    color: #70573B;
+    margin-top: 30px;
+    margin-right: 20px;
+}
+#line2{
+    margin-top: 30px;
+}
+#ptag{
+    font-size: 24px;
+    width: 390px;
+    color: #70573B;
+    margin-top: 40px;
+}
+#ptag2{
+    font-size: 24px;
+    width: 390px;
+    color: #70573B;
+    margin-top: 10px;
+}
+#ptag3{
+    font-size: 24px;
+    width: 390px;
+    color: #70573B;
+    margin-top: 10px;
+}
+#ptag4{
+    font-size: 24px;
+    width: 390px;
+    color: #70573B;
+    margin-top: 10px;
+}
+#button {
+    position: fixed;
+    z-index: 2; /* 네비게이션 바 위에 위치하도록 설정 */
+    top: 50px;
+    left: 50px;
+    background-color: transparent;
+    cursor: pointer; /* 커서를 손가락 모양으로 변경 */
+}
+
+#navBar {
+    width: 1000px;
+    height: 1080px;
+    position: absolute;
+    top: 0;
+    left: -300px; /* 초기에는 왼쪽으로 숨김 */
+    background-color: #222;
+    transition: all 0.35s; /* 's'를 추가하여 올바른 형식으로 설정 */
+}
+#button.clicked ~ #navBar {
+    right: 0; /* 이미지를 클릭하면 오른쪽에서 왼쪽으로 나타남 */
+}
+#playtext1{
+    margin-top: 120px;
+    left: 890px;
+    position: absolute;
+    color: #5F6C37;
+    font-family: "PretendardVariable";
+}
+#playtext2{
+    margin-top: 180px;
+    left: 200px;
+    position: absolute;
+    color: #5F6C37;
+    font-family: "PretendardVariable";
+    font-size: 21px;
+}
+#texteses{
+    position: absolute;
+    margin-top: 750px;
+    margin-left: 450px;
+}
+#botton2{
+    position: absolute;
+    margin-top: 750px;
+    margin-left: 650px;
+    font-family: "PretendardVariable";
+    color: #70573B;
+}
+#munhak{
+    position: absolute;
+    margin-top: 290px;
+    margin-left: 200px;
+}
+#munhak2{
+    position: absolute;
+    margin-top: 280px;
+    margin-left : 270px;
+}
+#munhak3{
+    position: absolute;
+    margin-top: 280px;
+    margin-left : 340px;
+}
+#lord{
+    position: absolute;
+    left: 700px;
+    margin-top: 180px;
+}
+
+#star{
+    position: absolute;
+    left: 1150px;
+    margin-top: 180px;
+}
+#love{
+    position: absolute;
+    left: 1600px;
+    margin-top: 180px;
+}
+#flower{
+    position: absolute;
+    left: 2050px;
+    margin-top: 180px;
+}
+#flowertext{
+    position: absolute;
+    left: 2050px;
+    margin-top: 720px;
+}
+#startext{
+    position: absolute;
+    left: 1150px;
+    margin-top: 720px;
+}
+#lovetext{
+    position: absolute;
+    left: 1600px;
+    margin-top: 720px;
+}
+#lordsinguo{
+    position: absolute;
+    margin-left: 700px;
+    margin-top: 720px;
+    color: #70573B;
+}
+#button2{
+    position: absolute;
+    margin-top: 480px;
+    margin-left: 500px;
+    width: 100px;
+}
+
+#font{
+    position: absolute;
+    margin-top: 1000px;
+    margin-left: 700px;
+    font-family: "PretendardVariable";
+    color: #70573B;
+    font-size: 20px;
+}
+.slide {
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.slide.active {
+    opacity: 1;
+}
